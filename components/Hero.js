@@ -4,6 +4,7 @@ import React from 'react'
 import { Cursor, useTypewriter } from 'react-simple-typewriter'
 import BackgroundCircles from './BackgroundCircles';
 
+const prefix = '/My-website';
 
 export default function Hero({}) {
   const [text, count] = useTypewriter({
@@ -21,7 +22,7 @@ export default function Hero({}) {
     <BackgroundCircles/>
     <img 
       className="relative rounded-full h-32 w-32 mx-auto object-cover"
-      src={'/images/myphoto.jpg'}
+      src={prefix + '/images/myphoto.jpg'}
       alt=""
     />
     <div className="z-20">
